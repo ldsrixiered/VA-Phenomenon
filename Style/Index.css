@@ -1,0 +1,155 @@
+
+:root {
+    --primary-color: #fcbf49;
+    --secondary-color: #d62828;
+    --accent-1: #f77f00;
+    --accent-2: #003049;
+    --bg-color: #fffaf5;
+    --text-color: #222;
+}
+
+body.dark {
+    --bg-color: #1e1e2f;
+    --text-color: #f1f1f1;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    transition: 0.3s;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background: transparent;
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: 500;
+    transition: 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: var(--primary-color);
+}
+
+.toggle {
+    cursor: pointer;
+    font-size: 1.5rem;
+    color: var(--accent-1);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+.typewriter {
+    display: inline-block;
+    border-right: 2px solid var(--primary-color);
+    white-space: nowrap;
+    overflow: hidden;
+    animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+    0%, 100% { border-color: transparent; }
+    50% { border-color: var(--primary-color); }
+}
+
+p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+.btns {
+    margin-top: 30px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    margin: 10px;
+    border-radius: 25px;
+    background-color: var(--primary-color);
+    color: white;
+    font-weight: 600;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: var(--secondary-color);
+}
+
+#services {
+    margin: 80px auto;
+    max-width: 800px;
+    text-align: center;
+    position: relative;
+}
+
+#services h2 {
+    font-size: 2rem;
+    color: var(--accent-2);
+    margin-bottom: 30px;
+}
+
+svg {
+    width: 100%;
+    height: 400px;
+    display: block;
+}
+
+.node-circle {
+    filter: drop-shadow(0 4px 6px rgba(0,0,0,0.2));
+}
+
+.node-label {
+    fill: var(--accent-2);
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+.link {
+    stroke: var(--accent-2);
+    stroke-width: 2;
+    opacity: 0.4;
+}
+
+.link-icon {
+    font-size: 22px;
+    pointer-events: auto;
+    user-select: none;
+}
+
