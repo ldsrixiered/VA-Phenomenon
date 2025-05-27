@@ -215,9 +215,10 @@ user-select: none;
 .card {
     display: flex;
     justify-content: space-around;
-    gap: 30px;
+    gap: 25px;
     margin: 0 3em;
     padding-bottom: 200px;
+    flex-wrap: wrap;
 }
 
 section h2{
@@ -225,4 +226,9 @@ section h2{
     font-weight: 30px;
 
     padding: 50px;
+}
+
+.tilt-card lord-icon {
+    width: 5em;
+    height: 5em;
 }
