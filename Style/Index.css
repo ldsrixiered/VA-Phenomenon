@@ -23,6 +23,10 @@ overflow-x: hidden;
 transition: 0.3s;
 }
 
+.logo img{
+    height: 3em;
+}
+
 nav {
 display: flex;
 justify-content: space-between;
